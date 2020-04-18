@@ -1,7 +1,7 @@
 
-##### ui
-
 library(shinydashboard)
+
+##### ui
 
 header=dashboardHeader(title = 'Flow Cytometry Data Analysis Tool')
 
@@ -18,7 +18,7 @@ sidebar=dashboardSidebar(
 tab_zscore <- fluidRow(
   
   #style='margin-left:0em',
-  
+
   box(
     title = NULL, status = "primary", solidHeader = TRUE, collapsible = FALSE,
     width = 12,
@@ -33,7 +33,7 @@ tab_zscore <- fluidRow(
                        #".csv"
                        ".xlsx",
                        ".xls"))#,
-    )
+           )
     
   ),
   
@@ -52,7 +52,7 @@ tab_zscore <- fluidRow(
     
     column(5, offset=5,
            downloadButton("download.zscore", strong("Download Z Score"))
-    )
+           )
   ),
   
   
@@ -95,7 +95,12 @@ tab_stat <- fluidRow(
     title = NULL, status = "primary", solidHeader = TRUE, collapsible = FALSE,
     width = 12, height = 900,
     
+    column(5, offset=5,
+           downloadButton("download.stats", strong("Download Stats for All Populations"))
+    ),
+    
     column(12, uiOutput('columns')),
+
     column(12, uiOutput('control')),
     
     #column(8, DT::dataTableOutput("table.test")),
@@ -121,5 +126,3 @@ body=dashboardBody(
 
 
 ui <- dashboardPage(title='Flow Cytometry Data Analysis Tool', skin = 'blue', header, sidebar, body)
-
-
