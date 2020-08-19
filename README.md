@@ -71,6 +71,7 @@
   - *sudo passwd rli012*
   - *cd /home/*
   - *mkdir rli012*
+  - *sudo chown -R rli012 /home/rli012*
   
 * Setup Security Groups
   - In the Security Group, add 'Custom TCP, TCP, 8787, 0.0.0.0/0'
