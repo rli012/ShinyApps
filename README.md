@@ -77,3 +77,9 @@
   
 * Launch RStudio Server: https://3.89.45.124:8787/
   
+  
+### Install plotly
+* Install openssl
+  - *sudo apt-get install -y libssl-dev*
+  - *R*
+  - *install.packages('openssl')
