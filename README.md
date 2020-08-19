@@ -1,6 +1,6 @@
 # ShinyApps
 
-### Shiny on AWS
+### Shiny Server on AWS
 
 * Step1: Create an AWS account (12-Month Free Tier)
 
@@ -53,3 +53,7 @@
   - *scp -i app.perm -r CancerMIRNome/ ubuntu@3.89.45.124:/home/ubuntu/ShinyApps/*
   
 * Step9: Launch the app: https://3.89.45.124:3838/CancerMIRNome/
+
+
+### RStudio Server on AWS
+
