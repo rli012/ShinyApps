@@ -57,3 +57,23 @@
 
 ### RStudio Server on AWS
 
+* [Download RStudio Server for Debian & Ubuntu](https://rstudio.com/products/rstudio/download-server/debian-ubuntu/)
+  - *sudo apt-get install gdebi-core*
+  - *wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.3.1073-amd64.deb*
+  - *sudo gdebi rstudio-server-1.3.1073-amd64.deb*
+  
+* [RStudio Server: Managing the Server](https://support.rstudio.com/hc/en-us/articles/200532327-Managing-the-Server)
+  - *sudo rstudio-server status*
+  - *sudo rstudio-server restart*
+  
+* Generate an account
+  - *sudo useradd rli012*
+  - *sudo passwd rli012*
+  - *cd /home/*
+  - *mkdir rli012*
+  
+* Setup Security Groups
+  - In the Security Group, add 'Custom TCP, TCP, 8787, 0.0.0.0/0'
+  
+* Launch RStudio Server: https://3.89.45.124:8787/
+  
