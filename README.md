@@ -39,7 +39,7 @@
   
   * Step7: Test Shiny Server
    - In browser: 3.89.45.124:3838
-   - If not working, *sudo service shiny-server restart*, then try again
+   - If not working, *sudo service shiny-server restart*, then try again (**restart anyway**)
    
  * Step8: Configure shiny-server.conf
     - *sudo vi /etc/shiny-server/shiny-server.conf*
