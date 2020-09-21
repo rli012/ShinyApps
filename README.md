@@ -11,7 +11,7 @@
   - IMPORTANT: IPv4 Public IP (e.g., 3.89.45.124) & Public DNS (IPv4)
 
 * Step3: Setup Security Groups
-  - In the Security Group, add 'Custom TCP, TCP, 3838, 0.0.0.0/0'
+  - In the Security Group, Edit inbound roles: 'Custom TCP, TCP, 3838, 0.0.0.0/0'
   
 * Step4: ssh -i app.perm ubuntu@3.89.45.124
   - *sudo apt-get update*
