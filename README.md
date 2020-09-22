@@ -84,3 +84,7 @@
   - *sudo apt-get install -y libssl-dev*
   - *R*
   - *install.packages('openssl')
+
+
+### DNS
+https://www.charlesbordet.com/en/guide-shiny-aws/#
